@@ -6,6 +6,6 @@ Lots of Small iOS Apps and Ideas to help learn
 * Apple getting started
 
 ##Technologies
-*Beacons
-*Core Location
-*Estimote
+* Beacons
+* Core Location
+* Estimote
