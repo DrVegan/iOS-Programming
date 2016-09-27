@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityIndicatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eqC-4w-Zbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="SXf-0Z-1al"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0A-Qg-6Vo">
+                                <rect key="frame" x="87" y="269" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startSpinning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgv-EP-Nol"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2x-xF-I2R">
+                                <rect key="frame" x="193" y="269" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopSpinning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0n-a7-Kky"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nUe-h4-a3M">
+                                <rect key="frame" x="142" y="325" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.62352941179999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nUe-h4-a3M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQ6-GD-hHz"/>
+                            <constraint firstItem="q2x-xF-I2R" firstAttribute="baseline" secondItem="n0A-Qg-6Vo" secondAttribute="baseline" id="bzB-fM-xrj"/>
+                            <constraint firstItem="SXf-0Z-1al" firstAttribute="top" secondItem="nUe-h4-a3M" secondAttribute="bottom" constant="206" id="rXZ-OV-XNC"/>
+                            <constraint firstItem="q2x-xF-I2R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s2I-aY-axo"/>
+                            <constraint firstItem="q2x-xF-I2R" firstAttribute="leading" secondItem="n0A-Qg-6Vo" secondAttribute="trailing" constant="72" id="tek-KX-sXT"/>
+                            <constraint firstItem="n0A-Qg-6Vo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="uGm-BV-Qh8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="nUe-h4-a3M" id="cl2-7b-tTm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74.666666666666671" y="366.83333333333331"/>
+        </scene>
+    </scenes>
+</document>
