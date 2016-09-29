@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project22" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project22" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,12 +20,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAh-pt-G9R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAh-pt-G9R" userLabel="Label0">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-H6-Awd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-H6-Awd" userLabel="Label1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwP-ak-ozc" userLabel="Label2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUp-9B-pDm" userLabel="Label3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82R-V6-qWk" userLabel="Label4">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1K-Oz-3d6" userLabel="Label5">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,19 +53,31 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kAh-pt-G9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AeW-oD-CSQ"/>
-                            <constraint firstItem="fAs-H6-Awd" firstAttribute="top" secondItem="kAh-pt-G9R" secondAttribute="bottom" constant="8" symbolic="YES" id="Lxm-pb-M7F"/>
-                            <constraint firstItem="kAh-pt-G9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJP-xd-zzO"/>
-                            <constraint firstItem="fAs-H6-Awd" firstAttribute="leading" secondItem="kAh-pt-G9R" secondAttribute="leading" id="caQ-HL-VrV"/>
+                            <constraint firstItem="fAs-H6-Awd" firstAttribute="top" secondItem="kAh-pt-G9R" secondAttribute="bottom" constant="8" symbolic="YES" id="KT4-6F-uyw"/>
+                            <constraint firstItem="82R-V6-qWk" firstAttribute="leading" secondItem="A1K-Oz-3d6" secondAttribute="leading" id="M5L-bW-Prs"/>
+                            <constraint firstItem="kAh-pt-G9R" firstAttribute="leading" secondItem="fAs-H6-Awd" secondAttribute="leading" id="QPy-cO-XhU"/>
+                            <constraint firstItem="kUp-9B-pDm" firstAttribute="top" secondItem="GwP-ak-ozc" secondAttribute="bottom" constant="8" symbolic="YES" id="R42-Vn-iMm"/>
+                            <constraint firstItem="fAs-H6-Awd" firstAttribute="leading" secondItem="GwP-ak-ozc" secondAttribute="leading" id="RS2-vK-LR6"/>
+                            <constraint firstItem="A1K-Oz-3d6" firstAttribute="top" secondItem="82R-V6-qWk" secondAttribute="bottom" constant="8" symbolic="YES" id="TOK-mH-FJm"/>
+                            <constraint firstItem="82R-V6-qWk" firstAttribute="top" secondItem="kUp-9B-pDm" secondAttribute="bottom" constant="7" id="TOZ-Xy-SEo"/>
+                            <constraint firstItem="GwP-ak-ozc" firstAttribute="top" secondItem="fAs-H6-Awd" secondAttribute="bottom" constant="7" id="UDx-bb-Lo9"/>
+                            <constraint firstItem="GwP-ak-ozc" firstAttribute="leading" secondItem="kUp-9B-pDm" secondAttribute="leading" id="VJS-2v-ykY"/>
+                            <constraint firstItem="kAh-pt-G9R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZBr-Mj-9IN"/>
+                            <constraint firstItem="kUp-9B-pDm" firstAttribute="leading" secondItem="82R-V6-qWk" secondAttribute="leading" id="acr-kG-gxa"/>
+                            <constraint firstItem="kAh-pt-G9R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dQ9-rg-Yi8"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="distanceReading" destination="kAh-pt-G9R" id="ytg-TQ-gnH"/>
-                        <outlet property="secondBeacon" destination="fAs-H6-Awd" id="L4o-jJ-9zd"/>
+                        <outlet property="label0" destination="kAh-pt-G9R" id="v9C-10-gdX"/>
+                        <outlet property="label1" destination="fAs-H6-Awd" id="QqS-dR-f06"/>
+                        <outlet property="label2" destination="GwP-ak-ozc" id="ZIp-pU-5SC"/>
+                        <outlet property="label3" destination="kUp-9B-pDm" id="ib1-y6-Kah"/>
+                        <outlet property="label4" destination="82R-V6-qWk" id="1jn-AV-wgr"/>
+                        <outlet property="label5" destination="A1K-Oz-3d6" id="Vyh-Lh-UjW"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
+            <point key="canvasLocation" x="-214" y="130"/>
         </scene>
     </scenes>
 </document>
